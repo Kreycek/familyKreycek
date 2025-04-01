@@ -19,17 +19,24 @@
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "tsconfig.app.json",
+            "tsConfig": "tsconfig.app.json",            
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/favicon.ico",
+              "src/assets"
             ],
-            "styles": [
-              "src/styles.css"
+            "styles": [  
+              "src/assets/css/bootstrap.css",
+               "src/assets/css/font-awesome.css",
+               "src/assets/css/custom.css"
+         
+             
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery-1.10.2.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/jquery.metisMenu.js",
+              "src/assets/js/custom.js"          
+            ]
           },
           "configurations": {
             "production": {
@@ -92,5 +99,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "6e5bfe3a-a673-4888-90da-546b5f40c6a8"
   }
 }
